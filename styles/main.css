@@ -27,7 +27,7 @@ nav a:hover {
   text-decoration: none;
   border: 1px lightgrey dashed;
   transition: .2s ease;
-  padding: .15rem;
+  padding: .1rem;
   border-radius: 10%;
   color: white;
   }
