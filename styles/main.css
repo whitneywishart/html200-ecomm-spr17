@@ -24,7 +24,12 @@ nav ul a {
 }
 
 nav a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  border: 1px lightgrey dashed;
+  transition: .2s ease;
+  padding: .15rem;
+  border-radius: 10%;
+  color: white;
   }
 
 nav ul {
@@ -79,9 +84,7 @@ h3 {
 
 .item-container {
   display: flex;
-  justify-content: space-around;
-  max-width: 60%;
-  max-height: 50%;
+  max-width: 70%;
 }
 
 div[class^="col-"] {
