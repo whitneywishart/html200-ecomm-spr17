@@ -33,11 +33,11 @@ nav a:hover {
   }
 
 nav ul {
-  background-color: cornflowerblue;
-  height: 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: cornflowerblue;
+  height: 2rem;
   font-weight: bold;
 
 }
@@ -84,11 +84,12 @@ h3 {
 
 .item-container {
   display: flex;
-  max-width: 70%;
+  flex-wrap: wrap;
 }
 
-div[class^="col-"] {
+.item {
   border: 1px lightgrey solid;
   margin: .5rem;
   padding: .5rem;
+  max-width: 30%;
 }
