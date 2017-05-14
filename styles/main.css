@@ -46,6 +46,19 @@ nav ul {
   font-weight: bold;
 }
 
+@media (max-width: 600px) {
+  .item-container {
+    flex-direction: column;
+
+    }
+}
+
+@media (min-width: 600px) {
+  .item {
+    border: 1px lightgrey solid;
+    }
+}
+
 /**************** HERO *****************/
 
 header img {
@@ -100,13 +113,18 @@ h3 {
 }
 
 .item {
-  border: 1px lightgrey solid;
+  /*border: 1px lightgrey solid;*/
   margin: .5rem;
   padding: .5rem;
   max-width: 30%;
 }
 
-.add-remove-btn {
+.add-to-cart-btn {
   text-align: center;
-  padding-top: 1rem;
+  padding-top: .5rem;
+}
+
+.remove-from-cart-btn {
+  text-align: center;
+  padding-top: .5rem;
 }
