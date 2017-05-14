@@ -105,3 +105,8 @@ h3 {
   padding: .5rem;
   max-width: 30%;
 }
+
+.add-remove-btn {
+  text-align: center;
+  padding-top: 1rem;
+}
