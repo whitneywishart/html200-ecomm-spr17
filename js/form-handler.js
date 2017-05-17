@@ -17,7 +17,11 @@ var cart = [
   { name: "Etro Paisley-Print Silk", price: 26.99, id: "item08"}
 ];
 
-function handleClick () {
-  alert("Alert on click")
-  // console.log(event);
+function handleClick (cart) {
+  var cartTotal = 0;
+  for (var cart = 0; index < cart.id; index++) {
+
+  cartTotal = cartTotal + cart.id(length);
+  }
+  console.log("You have " + cartTotal + " items in your cart.");
 }
