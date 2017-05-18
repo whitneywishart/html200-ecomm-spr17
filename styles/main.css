@@ -82,6 +82,10 @@ input[type="submit"] {
 
 /*********** PRODUCTS SECTION ***********/
 
+button {
+  margin-top: .5rem;
+}
+
 section {
   padding: 0 .75rem;
 }

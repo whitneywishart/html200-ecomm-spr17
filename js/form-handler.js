@@ -6,22 +6,30 @@ function capture() {
   console.log("Thanks for signing up for our mailing list, " + email + "!");
 }
 
-var cart = [
-  { name: "Reversible Plaid", price: 26.99, id: "item01"},
-  { name: "Fringed Plaid", price: 18.99, id: "item02"},
-  { name: "Multi Color", price: 22.99, id: "item03"},
-  { name: "Northern Lights", price: 29.99, id: "item04"},
-  { name: "Ombre Infinity", price: 11.99, id: "item05"},
-  { name: "Ashby Twill", price: 70.99, id: "item06"},
-  { name: "Wool Cable Knit", price: 49.99, id: "item07"},
-  { name: "Etro Paisley-Print Silk", price: 26.99, id: "item08"}
-];
+var cart = [];
 
-function handleClick (cart) {
-  var cartTotal = 0;
-  for (var cart = 0; index < cart.id; index++) {
+$(".add").click(function(event){
 
-  cartTotal = cartTotal + cart.id(length);
+  var name = $(event.target.parentElement).find(".name").text();
+  var description = $(event.target.parentElement).find(".description").text();
+  var price = $(event.target.parentElement).find(".price").text();
+
+  // add the item to array
+  cart.push({
+    name: name,
+    description: description,
+    price: price});
+
+  console.log(cart);
+  refreshBadge();
+});
+
+// show count next to cart
+function refreshBadge() {
+  /* show count in badge */
+  var badge = $("header").find(".badge");
+  if (cart) {
+    badge.text(cart.length);
   }
-  console.log("You have " + cartTotal + " items in your cart.");
+  console.log("You have " + cart.length + " items in your cart.");
 }
